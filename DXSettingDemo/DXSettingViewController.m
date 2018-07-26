@@ -60,7 +60,7 @@
     };
     
     DXSettingGroup *group = [[DXSettingGroup alloc] init];
-    group.sectionHeaderTitle = @"基本设置";
+    group.sectionHeaderTitle = @"简单设置";
     group.items = @[push, shake];
     [self.allGroups addObject:group];
 }
@@ -124,7 +124,7 @@
     };
     
     DXSettingGroup *group = [[DXSettingGroup alloc] init];
-    group.sectionHeaderTitle = @"基本设置";
+    group.sectionHeaderTitle = @"复杂设置";
     group.items = @[phone, shake];
     [self.allGroups addObject:group];
 }
