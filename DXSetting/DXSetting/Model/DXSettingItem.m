@@ -26,6 +26,6 @@
 }
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title detailTitle:(NSString *)detailTitle type:(DXSettingItemType)type
 {
-    return  [self itemWithIcon:icon title:title detailTitle:detailTitle type:type style:UITableViewCellStyleDefault];
+    return  [self itemWithIcon:icon title:title detailTitle:detailTitle type:type style:UITableViewCellStyleValue1];
 }
 @end

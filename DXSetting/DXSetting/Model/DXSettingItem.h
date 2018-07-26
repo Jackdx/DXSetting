@@ -27,6 +27,10 @@ typedef NS_ENUM(NSUInteger,DXSettingItemType){
 @property (nonatomic, copy) void (^switchBlock)(BOOL on) ;
 @property (nonatomic, copy) void (^operation)(void) ; // 点击cell后要执行的操作
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title detailTitle:(NSString *)detailTitle type:(DXSettingItemType)type style:(UITableViewCellStyle)style;
+
+// cell样式默认是UITableViewCellStyleDefault
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title type:(DXSettingItemType)type;
+
+// 带detailTitle的cell样式默认是UITableViewCellStyleValue1
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title detailTitle:(NSString *)detailTitle type:(DXSettingItemType)type;
 @end

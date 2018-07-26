@@ -40,14 +40,35 @@
 + (instancetype)settingCellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style
 {
     // 0.用static修饰的局部变量，只会初始化一次
-    static NSString *ID = @"DXSettingCell";
+    static NSString *DefaultID = @"DXUITableViewCellStyleDefault";
+    static NSString *Value1ID = @"DXUITableViewCellStyleValue1";
+    static NSString *SubtitleID = @"DXUITableViewCellStyleSubtitle";
+    DXSettingCell *cell = nil;
     // 1.拿到一个标识先去缓存池中查找对应的Cell
-    DXSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
+    if (style == UITableViewCellStyleValue1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:Value1ID];
+    }
+    else if (style == UITableViewCellStyleSubtitle)
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:SubtitleID];
+    }
+    else
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:DefaultID];
+    }
     // 2.如果缓存池中没有，才需要传入一个标识创建新的Cell
     if (cell == nil) {
-        //        cell = [[ZFSettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        cell = [[DXSettingCell alloc] initWithStyle:style reuseIdentifier:ID];
+        if (style == UITableViewCellStyleValue1) {
+            cell = [[DXSettingCell alloc] initWithStyle:style reuseIdentifier:Value1ID];
+        }
+        else if (style == UITableViewCellStyleSubtitle)
+        {
+            cell = [[DXSettingCell alloc] initWithStyle:style reuseIdentifier:SubtitleID];
+        }
+        else
+        {
+            cell = [[DXSettingCell alloc] initWithStyle:style reuseIdentifier:DefaultID];
+        }
     }
     return cell;
 }
@@ -68,7 +89,7 @@
 {
     _item = item;
     // 设置数据
-    self.imageView.image = [UIImage imageNamed:item.icon];
+    self.imageView.image = item.icon.length ? [UIImage imageNamed:item.icon] : nil;
     self.textLabel.text = item.title;
     self.detailTextLabel.text = item.detailTitle;
     

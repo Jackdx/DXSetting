@@ -26,6 +26,18 @@
     
     // 2.第1组：6个
     [self add1SectionItems];
+    
+    // 2.第2组：1个
+    [self add2SectionItems];
+    
+    // 1.第0组：3个
+    [self add0SectionItems];
+    
+    // 2.第1组：6个
+    [self add1SectionItems];
+    
+    // 2.第2组：1个
+    [self add2SectionItems];
   
 }
 #pragma mark 添加第0组的模型数据
@@ -90,5 +102,30 @@
     group.items = @[ help, share , about];
     [self.allGroups addObject:group];
 }
-
+#pragma mark 添加第2组的模型数据
+- (void)add2SectionItems
+{
+    __weak typeof(self) weakSelf = self;
+    // 1.1.推送和提醒
+    DXSettingItem *phone = [DXSettingItem itemWithIcon:@"MorePush" title:@"手机号" detailTitle:@"18671717171" type:DXSystemSettingItemTypeArrow];
+    //cell点击事件
+    phone.operation = ^{
+        UIViewController *phoneVC = [[UIViewController alloc] init];
+        phoneVC.view.backgroundColor = [UIColor brownColor];
+        phoneVC.title = @"手机号";
+        [weakSelf.navigationController pushViewController:phoneVC animated:YES];
+    };
+    
+    // 1.2.声音提示
+    DXSettingItem *shake = [DXSettingItem itemWithIcon:@"sound_Effect" title:@"特别" detailTitle:@"我是描述文字" type:DXSystemSettingItemTypeSwitch style:UITableViewCellStyleSubtitle];
+    //开关事件
+    shake.switchBlock = ^(BOOL on) {
+        NSLog(@"声音提示%zd",on);
+    };
+    
+    DXSettingGroup *group = [[DXSettingGroup alloc] init];
+    group.sectionHeaderTitle = @"基本设置";
+    group.items = @[phone, shake];
+    [self.allGroups addObject:group];
+}
 @end
