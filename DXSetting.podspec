@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DXSetting"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "An easy setting"
   s.homepage         = "https://github.com/Jackdx/DXSetting"
   s.license          = { :type => "MIT", :file => "LICENSE" }
