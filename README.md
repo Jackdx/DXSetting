@@ -8,7 +8,7 @@
 大部分应用都有设置模块，每次写都差不多，就封装了下，应该可以适配绝大部分的设置界面的需求了。
 
 ### 效果演示：
-![image](https://github.com/Jackdx/DXSetting/raw/master/photo.jpg =200x)
+![image](https://github.com/Jackdx/DXSetting/raw/master/photo.jpg)
 
 ### Installation with CocoaPods
 ```
