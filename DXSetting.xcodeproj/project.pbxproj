@@ -15,6 +15,12 @@
 		BBD8A70A210963B300EE48A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A709210963B300EE48A9 /* main.m */; };
 		BBD8A714210963B300EE48A9 /* DXSettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A713210963B300EE48A9 /* DXSettingTests.m */; };
 		BBD8A71F210963B300EE48A9 /* DXSettingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A71E210963B300EE48A9 /* DXSettingUITests.m */; };
+		BBD8A7322109653E00EE48A9 /* DXBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A7312109653E00EE48A9 /* DXBaseSettingViewController.m */; };
+		BBD8A7352109655500EE48A9 /* DXSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A7342109655500EE48A9 /* DXSettingGroup.m */; };
+		BBD8A7382109656A00EE48A9 /* DXSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A7372109656A00EE48A9 /* DXSettingItem.m */; };
+		BBD8A73B2109659700EE48A9 /* DXSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A73A2109659700EE48A9 /* DXSettingCell.m */; };
+		BBD8A73E21096D9300EE48A9 /* DXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A73D21096D9300EE48A9 /* DXSettingViewController.m */; };
+		BBD8A74121096E6200EE48A9 /* DXPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD8A74021096E6200EE48A9 /* DXPushNoticeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		BBD8A71A210963B300EE48A9 /* DXSettingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXSettingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD8A71E210963B300EE48A9 /* DXSettingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXSettingUITests.m; sourceTree = "<group>"; };
 		BBD8A720210963B300EE48A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD8A7302109653E00EE48A9 /* DXBaseSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXBaseSettingViewController.h; sourceTree = "<group>"; };
+		BBD8A7312109653E00EE48A9 /* DXBaseSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXBaseSettingViewController.m; sourceTree = "<group>"; };
+		BBD8A7332109655500EE48A9 /* DXSettingGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXSettingGroup.h; sourceTree = "<group>"; };
+		BBD8A7342109655500EE48A9 /* DXSettingGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXSettingGroup.m; sourceTree = "<group>"; };
+		BBD8A7362109656A00EE48A9 /* DXSettingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXSettingItem.h; sourceTree = "<group>"; };
+		BBD8A7372109656A00EE48A9 /* DXSettingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXSettingItem.m; sourceTree = "<group>"; };
+		BBD8A7392109659700EE48A9 /* DXSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXSettingCell.h; sourceTree = "<group>"; };
+		BBD8A73A2109659700EE48A9 /* DXSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXSettingCell.m; sourceTree = "<group>"; };
+		BBD8A73C21096D9300EE48A9 /* DXSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXSettingViewController.h; sourceTree = "<group>"; };
+		BBD8A73D21096D9300EE48A9 /* DXSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXSettingViewController.m; sourceTree = "<group>"; };
+		BBD8A73F21096E6200EE48A9 /* DXPushNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXPushNoticeViewController.h; sourceTree = "<group>"; };
+		BBD8A74021096E6200EE48A9 /* DXPushNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXPushNoticeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +119,15 @@
 		BBD8A6F9210963B300EE48A9 /* DXSetting */ = {
 			isa = PBXGroup;
 			children = (
+				BBD8A72C210964A100EE48A9 /* DXSetting */,
 				BBD8A6FA210963B300EE48A9 /* AppDelegate.h */,
 				BBD8A6FB210963B300EE48A9 /* AppDelegate.m */,
 				BBD8A6FD210963B300EE48A9 /* ViewController.h */,
 				BBD8A6FE210963B300EE48A9 /* ViewController.m */,
+				BBD8A73C21096D9300EE48A9 /* DXSettingViewController.h */,
+				BBD8A73D21096D9300EE48A9 /* DXSettingViewController.m */,
+				BBD8A73F21096E6200EE48A9 /* DXPushNoticeViewController.h */,
+				BBD8A74021096E6200EE48A9 /* DXPushNoticeViewController.m */,
 				BBD8A700210963B300EE48A9 /* Main.storyboard */,
 				BBD8A703210963B300EE48A9 /* Assets.xcassets */,
 				BBD8A705210963B300EE48A9 /* LaunchScreen.storyboard */,
@@ -130,6 +153,45 @@
 				BBD8A720210963B300EE48A9 /* Info.plist */,
 			);
 			path = DXSettingUITests;
+			sourceTree = "<group>";
+		};
+		BBD8A72C210964A100EE48A9 /* DXSetting */ = {
+			isa = PBXGroup;
+			children = (
+				BBD8A72F210964B200EE48A9 /* Controller */,
+				BBD8A72E210964B000EE48A9 /* Model */,
+				BBD8A72D210964AC00EE48A9 /* View */,
+			);
+			path = DXSetting;
+			sourceTree = "<group>";
+		};
+		BBD8A72D210964AC00EE48A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBD8A7392109659700EE48A9 /* DXSettingCell.h */,
+				BBD8A73A2109659700EE48A9 /* DXSettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BBD8A72E210964B000EE48A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBD8A7332109655500EE48A9 /* DXSettingGroup.h */,
+				BBD8A7342109655500EE48A9 /* DXSettingGroup.m */,
+				BBD8A7362109656A00EE48A9 /* DXSettingItem.h */,
+				BBD8A7372109656A00EE48A9 /* DXSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBD8A72F210964B200EE48A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBD8A7302109653E00EE48A9 /* DXBaseSettingViewController.h */,
+				BBD8A7312109653E00EE48A9 /* DXBaseSettingViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD8A73B2109659700EE48A9 /* DXSettingCell.m in Sources */,
+				BBD8A7352109655500EE48A9 /* DXSettingGroup.m in Sources */,
+				BBD8A7322109653E00EE48A9 /* DXBaseSettingViewController.m in Sources */,
 				BBD8A6FF210963B300EE48A9 /* ViewController.m in Sources */,
+				BBD8A74121096E6200EE48A9 /* DXPushNoticeViewController.m in Sources */,
 				BBD8A70A210963B300EE48A9 /* main.m in Sources */,
+				BBD8A73E21096D9300EE48A9 /* DXSettingViewController.m in Sources */,
 				BBD8A6FC210963B300EE48A9 /* AppDelegate.m in Sources */,
+				BBD8A7382109656A00EE48A9 /* DXSettingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +498,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9CL92667F5;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = DXSetting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DX.DXSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -444,12 +515,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9CL92667F5;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = DXSetting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DX.DXSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
